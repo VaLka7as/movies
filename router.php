@@ -22,10 +22,10 @@ if (isset($_GET['page'])) {
         case 'filmoPaieska':
             include("templates/" . activeTemplate . "/pages/search-movie-page.php");
             break;
-            /* Sitas nezinau kur turi nuvesti, uzkomentuoju
+
         case 'zanruValdymas' :
-            include (...)''
-            */
+            include ("templates/" . activeTemplate . "/pages/add-genre-page.php");
+            break;
         default :
     }
 
