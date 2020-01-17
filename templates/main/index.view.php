@@ -16,12 +16,12 @@
 </head>
 <body>
 <header>
-    <h1>Filmu paieskos aplikacija</h1>
+    <h1 style="text-align: center">Filmu paieskos aplikacija</h1>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="d-flex" id="wrapper">
-            <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="nav nav-tabs" id="wrapper">
+            <div class="nav-item" id="sidebar-wrapper">
                 <div class="sidebar-heading"><?=$siteName;?></div>
-                <div class="list-group list-group-flush">
+                <div class="pos-f-t">
                     <?php foreach($navigation['primary'] as $href => $title):?>
                         <a href="?page=<?=$href;?>" class="list-group-item list-group-item-action bg-light"><?=$title;?></a>
                     <?php endforeach; ?>
@@ -50,4 +50,3 @@
 </footer>
 </body>
 </html>
-

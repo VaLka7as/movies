@@ -17,6 +17,8 @@ try {
                 <td>Metai</td>
                 <td>Reitingas</td>
                 <td>Aprasymas</td>
+                <td>Redaguoti</td>
+                <td>Panaikinti</td>
             </tr>
 
             <?php
@@ -28,6 +30,8 @@ try {
                     <td><?= $filmas['metai']; ?></td>
                     <td><?= $filmas['reitingas']; ?></td>
                     <td><?= $filmas['aprasymas']; ?></td>
+                    <td><a href="?page=redaguoti&id=<?=$filmas['id']?>">Redaguoti</a></td>
+                    <td><a href="?page=istrinti&id=<?=$filmas['id']?>">Panaikinti</a></td>
                 </tr>
             <?php endforeach; ?>
 

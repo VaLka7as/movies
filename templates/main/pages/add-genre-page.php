@@ -13,7 +13,7 @@ if(isset($_POST['saugoti'])) {
         $conn = new PDO($dsn, $username, $password);
         if ($conn) {
             try {
-                $sql = "INSERT INTO zanrai (pavadinimas) VALUES (?)";
+                $sql = "INSERT INTO zanrai (zanras) VALUES (?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$_POST['pavadinimas']]);
                 echo "ok";
@@ -29,7 +29,7 @@ if(isset($_POST['saugoti'])) {
 
 
 
-<form>
+<form method="post">
     <div class="form-group">
         <label for="pavadinimas">pavadinimas</label>
         <input type="text" class="form-control" name="pavadinimas">
